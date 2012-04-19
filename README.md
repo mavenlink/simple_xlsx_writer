@@ -8,7 +8,7 @@ This is a simple, no-fuss generator for OpenXML (aka XLSX) files. No formatting 
 - Microsoft Office 2010 (Windows)
 - Microsoft Office 2008 for Mac (versions 12.2.5 or above)
 - Microsoft Excel Viewer (Windows)
-  
+
 iWork's Numbers does not appear to support the inline string storage model used by this gem. Apple may release a fix for this eventually, but for now, I have avoided the more common shared string table method as it cannot be implemented in linear time.
 
 
@@ -17,8 +17,8 @@ iWork's Numbers does not appear to support the inline string storage model used 
     serializer = SimpleXlsx::Serializer.new("test.xlsx") do |doc|
       doc.add_sheet("People") do |sheet|
         sheet.add_row(%w{DoB Name Occupation})
-        sheet.add_row([Date.parse("July 31, 1912"), 
-                       "Milton Friedman", 
+        sheet.add_row([Date.parse("July 31, 1912"),
+                       "Milton Friedman",
                        "Economist / Statistician"])
       end
     end

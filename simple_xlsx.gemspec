@@ -3,16 +3,16 @@ $:.push File.expand_path("../lib", __FILE__)
 require "simple_xlsx/version"
 
 Gem::Specification.new do |s|
-  s.name        = "broadcamp56-simple_xlsx_writer"
+  s.name        = "simple_xlsx"
   s.version     = SimpleXlsx::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Dee Zsombor", "Justin Beck"]
   s.email       = ["zsombor@primalgrasp.com"]
-  s.homepage    = "http://github.com/Broadcamp56/simple_xlsx_writer"
+  s.homepage    = "http://github.com/mavenlink/simple_xlsx"
   s.summary     = "Just as the name says, simple writer for Office 2007+ Excel files"
   s.description = "Writes XLSX files"
 
-  s.rubyforge_project = "broadcamp56-simple_xlsx_writer"
+  s.rubyforge_project = "simple_xlsx"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
