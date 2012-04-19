@@ -1,13 +1,4 @@
-*~
-.\#*
-.*.swp
-TAGS
-tmtags
-tmp
-*.patch
-*.diff
-*.xmlx
-notes.txt
-*.\#*
-*.rbc
-pkg
+*.gem
+.bundle
+Gemfile.lock
+pkg/*
