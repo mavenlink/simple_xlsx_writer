@@ -19,6 +19,8 @@ class Serializer
 
     FileUtils.mkdir_p(File.dirname(file_path))
     FileUtils.cp(tempfile.path, file_path)
+  ensure
+    tempfile.unlink if tempfile
   end
 
   def add_workbook_part
