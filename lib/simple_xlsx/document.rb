@@ -26,6 +26,5 @@ module SimpleXlsx
     def truncate_to_max_length(name)
       name[0..30]
     end
-
   end
 end
