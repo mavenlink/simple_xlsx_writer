@@ -34,7 +34,7 @@ class SheetTest < Test::Unit::TestCase
   def test_format_field_for_numbers
     v = Sheet.format_field_and_type_and_style 3
     assert_equal [:n, "<v>3</v>", 3], v
-    v = Sheet.format_field_and_type_and_style(BigDecimal.new("45"))
+    v = Sheet.format_field_and_type_and_style(BigDecimal("45"))
     assert_equal [:n, "<v>45.0</v>", 4], v
     v = Sheet.format_field_and_type_and_style(9.32)
     assert_equal [:n, "<v>9.32</v>", 4], v
